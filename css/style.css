@@ -321,3 +321,64 @@ h1 {
 .profile a:hover {
   color: #00aaff;
 }
+
+.lichaam {
+  display:grid;
+  grid-template-columns: 760px 760px;
+  grid-template-rows: 325px 325px;
+  column-gap: 0px;
+  row-gap: 0px;
+
+}
+
+.kings {
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.kaas {
+  width: 99%;
+  height: 90%;
+  margin-top: 10px;
+}
+
+.goblin {
+  height: 80%;
+  width: 95%;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.tekst {
+  color: white;
+  text-align: center;
+}
+
+.ons {
+  color: white;
+text-align: center;
+}
+
+.title {
+  
+  color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.title a {
+  color: white;
+  text-decoration: none;
+}
+
+.title:hover {
+  color: #ffd700;
+  text-shadow: 
+    0 0 10px #ffd700,
+    0 0 20px #ffd700,
+    0 0 30px #ffd700,
+    2px 2px 8px rgba(0, 0, 0, 0.9);
+  transform: scale(1.05);
+}

@@ -1,0 +1,119 @@
+    @font-face {
+  font-family: 'Clash';
+  src: url('fonts/Clash_Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+    body {
+  font-family: 'Clash', sans-serif;
+  font-size: 20px;
+  background-image: url('images/background light.png');
+  margin: 0%;
+  
+}
+
+.navbar {
+  position: sticky;
+  background-color: #2166b3;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  justify-content: space-between;
+  padding: 10px;
+  z-index: 1000;
+  top: 0;
+}
+
+.logo img { 
+  height: 100px; 
+  justify-self: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: block;
+  margin:auto;
+}
+
+.logo-items {
+    display: flex;
+    justify-content: space-evenly;
+    justify-self: auto;
+    width: 30%;
+    color:white;
+       
+
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px; 
+  width: 61%;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #00aaff; 
+}
+
+.profile {
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.profile a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.profile a:hover {
+  color: #00aaff;
+}
+
+.lichaam {
+  display:grid;
+  grid-template-columns: 760px 760px;
+  grid-template-rows: 325px 325px;
+  column-gap: 0px;
+  row-gap: 0px;
+
+}
+
+.kings {
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.kaas {
+  width: 99%;
+  height: 90%;
+  margin-top: 10px;
+}
+
+.goblin {
+  height: 80%;
+  width: 95%;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.tekst {
+  color: white;
+  text-align: center;
+}
+
+.ons {
+  color: white;
+text-align: center;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
