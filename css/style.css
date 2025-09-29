@@ -1,0 +1,255 @@
+/* ===== CUSTOM FONT IMPORT ===== */
+/* Import custom Clash font for authentic Clash Royale styling */
+/* Note: Font file not available, using fallback fonts */
+@font-face {
+  font-family: 'Clash';
+  src: url('../fonts/Clash_Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ===== GLOBAL STYLES ===== */
+/* Basic page styling with custom font and background */
+body {
+  font-family: 'Clash', 'Arial Black', Arial, sans-serif;
+  font-size: 20px;
+  background-image: url('../images/backgroundimage.png');
+  letter-spacing: 1px;
+}
+
+/* Main page heading with shadow effect */
+h1 {
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* ===== MAIN NEWS CARD CONTAINER ===== */
+/* The main card with dark gradient background and simple border */
+.news-card {
+  max-width: 500px;
+  margin: 30px auto;
+  background: linear-gradient(145deg, #1a1a2e 0%, #16213e 50%, #0f1419 100%);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  border: 2px solid #ffd700;
+}
+
+/* ===== CARD HEADER IMAGE SECTION ===== */
+/* Orange gradient header with sword emoji background */
+.card-image {
+  height: 160px;
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 50%, #ffd700 100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Sword emoji as background decoration in header */
+.card-image::before {
+  content: '⚔️';
+  font-size: 48px;
+  opacity: 0.8;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* "LOL" badge in top-right corner */
+.card-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #ff006e;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Category label in top-left corner */
+.card-category {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #ffd700;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+/* ===== CARD CONTENT SECTION ===== */
+/* Main content area with dark gradient background */
+.card-content {
+  padding: 20px;
+  background: linear-gradient(180deg, #1a1a2e 0%, #0f1419 100%);
+}
+
+/* Main card title with white text */
+.card-title {
+  margin: 0 0 12px 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+/* Description text with light purple color */
+.card-description {
+  margin: 0 0 16px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #b8b8d1;
+}
+
+/* ===== FUNNY UPDATES SECTIONS ===== */
+/* Container for the funny updates and gossip sections */
+.balance-changes {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Individual section boxes (Funny Updates & Arena Gossip) */
+.change-section {
+  background: #2a2a4e;
+  border-radius: 8px;
+  padding: 16px;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+/* Section headings (🤣 FUNNY UPDATES, 🎭 ARENA GOSSIP) */
+.section-title {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffd700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Individual funny news items with card name and description */
+.change-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Remove border from last item in each section */
+.change-item:last-child {
+  border-bottom: none;
+}
+
+/* Card names (Mega Knight, Princess, etc.) */
+.card-name {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+/* Funny descriptions on the right side */
+.change-desc {
+  font-size: 12px;
+  color: #b8b8d1;
+  text-align: right;
+}
+
+/* ===== ROYAL PALACE STATEMENT BOX ===== */
+/* Special highlighted box for the "official" royal statement */
+.update-info {
+  background: rgba(255, 107, 53, 0.15);
+  border: 1px solid rgba(255, 107, 53, 0.4);
+  border-radius: 6px;
+  padding: 12px;
+  margin: 16px 0;
+}
+
+/* Text inside the royal statement box */
+.update-info p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #e8e2f0;
+}
+
+/* Bold text (👑 Royal Palace Statement:) in gold color */
+.update-info strong {
+  color: #ffd700;
+}
+
+/* ===== STATS BAR AT BOTTOM ===== */
+/* Container for the stat items (Drama Cases, Date, etc.) */
+.card-stats {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+/* Individual stat bubbles with icon and text */
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #2a2a4e;
+  padding: 8px 12px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  flex: 1;
+  min-width: 120px;
+}
+
+/* Emoji icons in stat items */
+.stat-icon {
+  font-size: 14px;
+}
+
+/* Text in stat items (6 Drama Cases, Royal News, etc.) */
+.stat-text {
+  font-size: 12px;
+  color: #ffd700;
+  font-weight: bold;
+}
+
+/* ===== HOVER EFFECTS ===== */
+/* Simple hover effect */
+.news-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+  transition: box-shadow 0.3s ease;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+/* Mobile-friendly adjustments for smaller screens */
+@media (max-width: 480px) {
+  .news-card {
+    margin: 20px 15px;
+    max-width: none;
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  .card-stats {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .stat-item {
+    justify-content: center;
+  }
+}
+
