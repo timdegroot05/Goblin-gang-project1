@@ -15,6 +15,11 @@ body {
   font-size: 20px;
   background-image: url('../images/backgroundimage.png');
   letter-spacing: 1px;
+  margin: 0;
+ 
+  padding-bottom: 80px;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
 /* Main page heading with shadow effect */
@@ -23,14 +28,16 @@ h1 {
   color: #fff;
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 30px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
+
 
 /* ===== MAIN NEWS CARD CONTAINER ===== */
 /* The main card with dark gradient background and simple border */
 .news-card {
   max-width: 500px;
-  margin: 30px auto;
+  margin: 20px auto 40px auto;
   background: linear-gradient(145deg, #1a1a2e 0%, #16213e 50%, #0f1419 100%);
   border-radius: 12px;
   overflow: hidden;
@@ -253,3 +260,64 @@ h1 {
   }
 }
 
+.navbar {
+  position: relative;
+  background-color: #2166b3;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  justify-content: space-between;
+  padding: 10px;
+  z-index: 1000;
+  top: 0;
+}
+
+.logo img { 
+  height: 100px; 
+  justify-self: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: block;
+  margin:auto;
+}
+
+.logo-items {
+    display: flex;
+    justify-content: space-evenly;
+    justify-self: auto;
+    width: 30%;
+    color:white;
+
+
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px; 
+  width: 61%;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #00aaff; 
+}
+
+.profile {
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.profile a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.profile a:hover {
+  color: #00aaff;
+}
